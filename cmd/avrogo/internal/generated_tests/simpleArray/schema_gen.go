@@ -3,7 +3,7 @@
 package simpleArray
 
 import (
-	"github.com/heetch/avro/avrotypegen"
+	"github.com/amedia/avro/avrotypegen"
 )
 
 type R struct {

@@ -4,7 +4,7 @@ package enumDefault
 
 import (
 	"fmt"
-	"github.com/heetch/avro/avrotypegen"
+	"github.com/amedia/avro/avrotypegen"
 	"strconv"
 )
 
@@ -53,7 +53,7 @@ func (e *Foo) UnmarshalText(data []byte) error {
 }
 
 type R struct {
-	EnumField Foo `json:"enumField"`
+	Enumfield Foo `json:"enumField"`
 }
 
 // AvroRecord implements the avro.AvroRecord interface.

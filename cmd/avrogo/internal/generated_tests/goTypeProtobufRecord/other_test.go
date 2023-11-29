@@ -1,5 +1,5 @@
 package goTypeProtobufRecord
 
-import "github.com/heetch/avro/internal/testtypes"
+import "github.com/amedia/avro/internal/testtypes"
 
 type R = testtypes.MessageB

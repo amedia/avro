@@ -15,8 +15,8 @@ import (
 	qt "github.com/frankban/quicktest"
 	"gopkg.in/retry.v1"
 
-	"github.com/heetch/avro"
-	"github.com/heetch/avro/avroregistry"
+	"github.com/amedia/avro"
+	"github.com/amedia/avro/avroregistry"
 )
 
 func TestRegister(t *testing.T) {

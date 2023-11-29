@@ -160,7 +160,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/heetch/avro"
+	"github.com/amedia/avro"
 
 	pkg {{printf "%q" .Package}}
 )

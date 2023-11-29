@@ -13,8 +13,8 @@ import (
 	"github.com/actgardner/gogen-avro/v10/parser"
 	"github.com/actgardner/gogen-avro/v10/schema"
 
-	"github.com/heetch/avro/cmd/avrogo/avrotypemap"
-	"github.com/heetch/avro/internal/typeinfo"
+	"github.com/amedia/avro/cmd/avrogo/avrotypemap"
+	"github.com/amedia/avro/internal/typeinfo"
 )
 
 type goType = avrotypemap.GoType
@@ -107,8 +107,8 @@ func externalTypeInfoForGoTypes(gts map[goType]bool) (map[goType]avrotypemap.Ext
 			pkgPaths = append(pkgPaths, pkgPath)
 		}
 	}
-	addPkg("github.com/heetch/avro")
-	addPkg("github.com/heetch/avro/cmd/avrogo/avrotypemap")
+	addPkg("github.com/amedia/avro")
+	addPkg("github.com/amedia/avro/cmd/avrogo/avrotypemap")
 	for gt := range gts {
 		addPkg(gt.PkgPath)
 	}

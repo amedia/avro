@@ -3,11 +3,11 @@
 package fixedDefault
 
 import (
-	"github.com/heetch/avro/avrotypegen"
+	"github.com/amedia/avro/avrotypegen"
 )
 
 type R struct {
-	FixedField Five `json:"fixedField"`
+	Fixedfield Five `json:"fixedField"`
 }
 
 // AvroRecord implements the avro.AvroRecord interface.

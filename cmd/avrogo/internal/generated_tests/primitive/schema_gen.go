@@ -3,18 +3,18 @@
 package primitive
 
 import (
-	"github.com/heetch/avro/avrotypegen"
+	"github.com/amedia/avro/avrotypegen"
 )
 
 type R struct {
-	IntField    int              `json:"intField"`
-	LongField   int64            `json:"longField"`
-	FloatField  float32          `json:"floatField"`
-	DoubleField float64          `json:"doubleField"`
-	BoolField   bool             `json:"boolField"`
-	BytesField  []byte           `json:"bytesField"`
-	StringField string           `json:"stringField"`
-	NullField   avrotypegen.Null `json:"nullField"`
+	Intfield    int              `json:"intField"`
+	Longfield   int64            `json:"longField"`
+	Floatfield  float32          `json:"floatField"`
+	Doublefield float64          `json:"doubleField"`
+	Boolfield   bool             `json:"boolField"`
+	Bytesfield  []byte           `json:"bytesField"`
+	Stringfield string           `json:"stringField"`
+	Nullfield   avrotypegen.Null `json:"nullField"`
 }
 
 // AvroRecord implements the avro.AvroRecord interface.

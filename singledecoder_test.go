@@ -7,7 +7,7 @@ import (
 
 	qt "github.com/frankban/quicktest"
 
-	"github.com/heetch/avro"
+	"github.com/amedia/avro"
 )
 
 //go:generate avrogo testschema1.avsc

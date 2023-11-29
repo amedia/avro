@@ -3,7 +3,7 @@
 package avrotypemap_test
 
 import (
-	"github.com/heetch/avro/avrotypegen"
+	"github.com/amedia/avro/avrotypegen"
 )
 
 type U struct {

@@ -3,8 +3,8 @@
 package invalidUUID
 
 import (
+	"github.com/amedia/avro/avrotypegen"
 	uuid "github.com/google/uuid"
-	"github.com/heetch/avro/avrotypegen"
 )
 
 type R struct {

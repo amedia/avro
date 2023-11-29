@@ -4,7 +4,7 @@ package avro_test
 
 import (
 	"fmt"
-	"github.com/heetch/avro/avrotypegen"
+	"github.com/amedia/avro/avrotypegen"
 	"strconv"
 )
 

@@ -9,8 +9,8 @@ import (
 
 	"github.com/actgardner/gogen-avro/v10/schema"
 
-	"github.com/heetch/avro/avrotypegen"
-	"github.com/heetch/avro/internal/typeinfo"
+	"github.com/amedia/avro/avrotypegen"
+	"github.com/amedia/avro/internal/typeinfo"
 )
 
 const (

@@ -13,7 +13,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/heetch/avro"
+	"github.com/amedia/avro"
 	"gopkg.in/httprequest.v1"
 	retry "gopkg.in/retry.v1"
 )

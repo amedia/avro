@@ -3,15 +3,14 @@
 package cloudEvent
 
 import (
-	"github.com/heetch/avro/avrotypegen"
+	"github.com/amedia/avro/avrotypegen"
 	"time"
 )
 
 type CloudEvent struct {
 	Id string `json:"id"`
 
-	// source holds the
-	// source of the message.
+	// source holds the 		 * source of the message.
 	Source      string    `json:"source"`
 	Specversion string    `json:"specversion"`
 	Time        time.Time `json:"time"`

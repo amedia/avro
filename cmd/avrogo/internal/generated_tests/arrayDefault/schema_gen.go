@@ -3,11 +3,11 @@
 package arrayDefault
 
 import (
-	"github.com/heetch/avro/avrotypegen"
+	"github.com/amedia/avro/avrotypegen"
 )
 
 type R struct {
-	ArrayOfInt []int `json:"arrayOfInt"`
+	Arrayofint []int `json:"arrayOfInt"`
 }
 
 // AvroRecord implements the avro.AvroRecord interface.

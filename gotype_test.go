@@ -9,8 +9,8 @@ import (
 	qt "github.com/frankban/quicktest"
 	gouuid "github.com/google/uuid"
 
-	"github.com/heetch/avro"
-	"github.com/heetch/avro/internal/testtypes"
+	"github.com/amedia/avro"
+	"github.com/amedia/avro/internal/testtypes"
 )
 
 func TestSimpleGoType(t *testing.T) {

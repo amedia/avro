@@ -1,4 +1,4 @@
-module github.com/heetch/avro
+module github.com/amedia/avro
 
 go 1.19
 
