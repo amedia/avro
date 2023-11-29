@@ -8,8 +8,8 @@ import (
 
 	"github.com/actgardner/gogen-avro/v10/schema"
 
-	"github.com/amedia/avro"
-	"github.com/amedia/avro/internal/typeinfo"
+	"github.com/heetch/avro"
+	"github.com/heetch/avro/internal/typeinfo"
 )
 
 // ExternalTypeResult is used as a JSON-marshaled value

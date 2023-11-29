@@ -3,7 +3,7 @@
 package largeRecord
 
 import (
-	"github.com/amedia/avro/avrotypegen"
+	"github.com/heetch/avro/avrotypegen"
 )
 
 // Common information related to the event which must be included in any clean event
@@ -30,7 +30,7 @@ func (Data1) AvroRecord() avrotypegen.RecordInfo {
 
 type Trace1 struct {
 	// Trace Identifier
-	Traceid *UUID0 `json:"traceId"`
+	TraceId *UUID0 `json:"traceId"`
 }
 
 // AvroRecord implements the avro.AvroRecord interface.
@@ -94,7 +94,7 @@ func (Data0) AvroRecord() avrotypegen.RecordInfo {
 
 type Trace0 struct {
 	// Trace Identifier
-	Traceid *UUID0 `json:"traceId"`
+	TraceId *UUID0 `json:"traceId"`
 }
 
 // AvroRecord implements the avro.AvroRecord interface.

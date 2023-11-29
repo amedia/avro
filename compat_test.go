@@ -5,7 +5,7 @@ import (
 
 	qt "github.com/frankban/quicktest"
 
-	"github.com/amedia/avro"
+	"github.com/heetch/avro"
 )
 
 var compatStringTests = []struct {

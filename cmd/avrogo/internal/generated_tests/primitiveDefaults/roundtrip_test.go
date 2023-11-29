@@ -5,7 +5,7 @@ package primitiveDefaults
 import (
 	"testing"
 
-	"github.com/amedia/avro/cmd/avrogo/internal/testutil"
+	"github.com/heetch/avro/cmd/avrogo/internal/testutil"
 )
 
 var tests = testutil.RoundTripTest{
@@ -28,8 +28,8 @@ var tests = testutil.RoundTripTest{
                     }`,
 		OutDataJSON: `{
                         "string": "hello",
-                        "long": 2222,
                         "int": 1111,
+                        "long": 2222,
                         "float": 1.5,
                         "double": 2.75,
                         "boolean": true

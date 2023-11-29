@@ -3,7 +3,7 @@
 package testtypes
 
 import (
-	"github.com/amedia/avro/avrotypegen"
+	"github.com/heetch/avro/avrotypegen"
 	"time"
 )
 

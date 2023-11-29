@@ -4,7 +4,7 @@ package simpleEnum
 
 import (
 	"fmt"
-	"github.com/amedia/avro/avrotypegen"
+	"github.com/heetch/avro/avrotypegen"
 	"strconv"
 )
 

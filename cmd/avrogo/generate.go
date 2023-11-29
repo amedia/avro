@@ -65,7 +65,7 @@ func generate(w io.Writer, pkg string, ns *parser.Namespace, definitions []schem
 	}
 	// Add avrotypegen package conditionally when there is a RecordDefinition in the namespace.
 	if shouldImportAvroTypeGen(ns, definitions) {
-		gc.addImport("github.com/amedia/avro/avrotypegen")
+		gc.addImport("github.com/heetch/avro/avrotypegen")
 	}
 	var body bytes.Buffer
 	if err := bodyTemplate.Execute(&body, bodyTemplateParams{
@@ -84,7 +84,7 @@ func generate(w io.Writer, pkg string, ns *parser.Namespace, definitions []schem
 	// TODO look at the actual identifier used by the
 	// package to avoid the explicit identifer in more cases.
 	for pkg := range gc.imports {
-		if !strings.Contains(pkg, ".") || strings.HasPrefix(pkg, "github.com/amedia/avro/") {
+		if !strings.Contains(pkg, ".") || strings.HasPrefix(pkg, "github.com/heetch/avro/") {
 			gc.imports[pkg] = ""
 		}
 	}
@@ -472,7 +472,7 @@ func writeUnionComment(w io.Writer, union []typeInfo, indent string) {
 	if len(union) == 2 && (union[0].GoType == nullType || union[1].GoType == nullType) {
 		// No need to comment a nil union.
 		// TODO we may want to document whether a map or array may
-		// be nil though. https://github.com/amedia/avro/issues/19
+		// be nil though. https://github.com/heetch/avro/issues/19
 		return
 	}
 	printf := func(a string, f ...interface{}) {
@@ -503,7 +503,7 @@ func (gc *generateContext) GoTypeOf(t schema.AvroType) typeInfo {
 	case *schema.LongField:
 		switch logicalType(t) {
 		case timestampMicros:
-			// TODO support timestampMillis. https://github.com/amedia/avro/issues/3
+			// TODO support timestampMillis. https://github.com/heetch/avro/issues/3
 			info.GoType = "time.Time"
 			gc.addImport("time")
 		case durationNanos:
@@ -532,7 +532,7 @@ func (gc *generateContext) GoTypeOf(t schema.AvroType) typeInfo {
 			// TODO if inner type is array or map, we don't need
 			// the pointer - both of those types already have nil
 			// values in Go.
-			// https://github.com/amedia/avro/issues/19
+			// https://github.com/heetch/avro/issues/19
 			inner := gc.GoTypeOf(types[1])
 			info.GoType = "*" + inner.GoType
 			info.Union = []typeInfo{

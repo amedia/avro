@@ -3,7 +3,7 @@
 package recordDefault
 
 import (
-	"github.com/amedia/avro/avrotypegen"
+	"github.com/heetch/avro/avrotypegen"
 )
 
 type Foo struct {
@@ -29,7 +29,7 @@ func (Foo) AvroRecord() avrotypegen.RecordInfo {
 }
 
 type R struct {
-	Recordfield Foo `json:"recordField"`
+	RecordField Foo `json:"recordField"`
 }
 
 // AvroRecord implements the avro.AvroRecord interface.

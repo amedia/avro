@@ -6,7 +6,7 @@ import (
 
 	qt "github.com/frankban/quicktest"
 
-	"github.com/amedia/avro/internal/testtypes"
+	"github.com/heetch/avro/internal/testtypes"
 )
 
 var (

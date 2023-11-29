@@ -7,7 +7,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/amedia/avro"
+	"github.com/heetch/avro"
 )
 
 type encodingRegistry struct {

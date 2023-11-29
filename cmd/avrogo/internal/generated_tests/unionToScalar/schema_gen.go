@@ -3,7 +3,7 @@
 package unionToScalar
 
 import (
-	"github.com/amedia/avro/avrotypegen"
+	"github.com/heetch/avro/avrotypegen"
 )
 
 type PrimitiveUnionTestRecord struct {

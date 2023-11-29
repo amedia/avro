@@ -7,7 +7,7 @@ import (
 
 	qt "github.com/frankban/quicktest"
 
-	"github.com/amedia/avro"
+	"github.com/heetch/avro"
 )
 
 func TestSingleEncoder(t *testing.T) {

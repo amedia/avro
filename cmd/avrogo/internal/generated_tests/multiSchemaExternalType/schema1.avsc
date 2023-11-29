@@ -40,5 +40,5 @@
                             }
                         }
                     ],
-                    "go.package": "github.com/amedia/avro/internal/testtypes"
+                    "go.package": "github.com/heetch/avro/internal/testtypes"
                 }

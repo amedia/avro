@@ -3,11 +3,11 @@
 package mapDefault
 
 import (
-	"github.com/amedia/avro/avrotypegen"
+	"github.com/heetch/avro/avrotypegen"
 )
 
 type R struct {
-	Mapofint map[string]int `json:"mapOfInt"`
+	MapOfInt map[string]int `json:"mapOfInt"`
 }
 
 // AvroRecord implements the avro.AvroRecord interface.

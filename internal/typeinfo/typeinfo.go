@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/amedia/avro/avrotypegen"
+	"github.com/heetch/avro/avrotypegen"
 )
 
 // Info is the representation of Go types used

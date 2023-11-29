@@ -3,7 +3,7 @@
 package unionNullString
 
 import (
-	"github.com/amedia/avro/avrotypegen"
+	"github.com/heetch/avro/avrotypegen"
 )
 
 type R struct {

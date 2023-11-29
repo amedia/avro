@@ -5,7 +5,7 @@ import (
 
 	qt "github.com/frankban/quicktest"
 
-	"github.com/amedia/avro"
+	"github.com/heetch/avro"
 )
 
 // NOTE: the INTEGERS part of the canonicalizing specification is redundant

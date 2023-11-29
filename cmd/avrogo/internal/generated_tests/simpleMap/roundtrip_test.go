@@ -5,7 +5,7 @@ package simpleMap
 import (
 	"testing"
 
-	"github.com/amedia/avro/cmd/avrogo/internal/testutil"
+	"github.com/heetch/avro/cmd/avrogo/internal/testutil"
 )
 
 var tests = testutil.RoundTripTest{
