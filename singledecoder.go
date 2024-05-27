@@ -55,6 +55,9 @@ type SingleDecoder struct {
 	programs map[decoderSchemaPair]*decodeProgram
 }
 
+// Delay before retrying registry fetch, to avoid DOSing registry
+const registryErrorRetryDelay = 1 * time.Minute
+
 // NewSingleDecoder returns a new SingleDecoder that uses g to determine
 // the schema of each message that's marshaled or unmarshaled.
 //
@@ -113,6 +116,8 @@ func (c *SingleDecoder) getProgram(ctx context.Context, vt reflect.Type, wID int
 	var err error
 	if wType != nil {
 		if es, ok := wType.avroType.(errorSchema); ok && (es.invalidAfter.IsZero() || time.Now().Before(es.invalidAfter)) {
+			// The last time we tried to configure this schema, we got an error.
+			// We should keep waiting a little while longer before retrying schema fetch
 			return nil, es.err
 		}
 	}
@@ -124,7 +129,10 @@ func (c *SingleDecoder) getProgram(ctx context.Context, vt reflect.Type, wID int
 	defer c.mu.Unlock()
 	if err != nil {
 		c.writerTypes[wID] = &Type{
-			avroType: errorSchema{err: err, invalidAfter: time.Now().Add(1 * time.Minute)},
+			avroType: errorSchema{
+				err:          err,
+				invalidAfter: time.Now().Add(registryErrorRetryDelay), // This error is probably temporary
+			},
 		}
 		return nil, err
 	}
