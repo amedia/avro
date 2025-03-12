@@ -9,7 +9,7 @@ require (
 	github.com/kr/pretty v0.3.0
 	github.com/linkedin/goavro/v2 v2.11.1
 	github.com/rogpeppe/go-internal v1.9.0
-	golang.org/x/text v0.3.0
+	golang.org/x/text v0.22.0
 	gopkg.in/httprequest.v1 v1.2.1
 	gopkg.in/retry.v1 v1.0.3
 )
@@ -20,7 +20,7 @@ require (
 	github.com/julienschmidt/httprouter v1.3.0 // indirect
 	github.com/kr/text v0.2.0 // indirect
 	github.com/pkg/diff v0.0.0-20210226163009-20ebb0f2a09e // indirect
-	golang.org/x/net v0.0.0-20200505041828-1ed23360d12c // indirect
+	golang.org/x/net v0.36.0 // indirect
 	golang.org/x/xerrors v0.0.0-20191204190536-9bdfabe68543 // indirect
 	gopkg.in/errgo.v1 v1.0.0 // indirect
 )
